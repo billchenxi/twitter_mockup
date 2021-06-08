@@ -18,7 +18,7 @@ function Registration() {
     });
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3001/auth", data).then(() => {
+        axios.post("https://thawing-shore-53496.herokuapp.com/auth", data).then(() => {
             console.log(data);
             history.push("/");
         });

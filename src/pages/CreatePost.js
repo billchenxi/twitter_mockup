@@ -26,7 +26,7 @@ function CreatePost() {
 
 
     const onSubmit = (data) => {
-        axios.post("http://localhost:3001/posts", data, {
+        axios.post("https://thawing-shore-53496.herokuapp.com/posts", data, {
             headers: {accessToken:localStorage.getItem("accessToken")}}).then((response) => {
         history.push("/"); // going back to home page
     });

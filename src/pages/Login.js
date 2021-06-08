@@ -11,7 +11,7 @@ function Login() {
     const { setAuthState } = useContext(AuthContext); 
     const login = () => {
         const data = {username: username, password: password};
-        axios.post("http://localhost:3001/auth/login", data).then(
+        axios.post("https://thawing-shore-53496.herokuapp.com/auth/login", data).then(
             (response) => {
                 // console.log(response.data);
                 if (response.data.error) { 

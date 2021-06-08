@@ -7,7 +7,7 @@ function Profile() {
     const  [username, setUsername] = useState("");
     
     useEffect(() => {
-        axios.get(`http://localhost:3001/auth/basicinfo/${id}`).then(
+        axios.get(`https://thawing-shore-53496.herokuapp.com/auth/basicinfo/${id}`).then(
             (response) => {
                 setUsername(response.data.username);
             }
