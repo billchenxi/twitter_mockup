@@ -15,7 +15,7 @@ function Home() {
     if (!localStorage.getItem("accessToken")) {
         history.push("/login");
     } else {
-        axios.get("hhttps://thawing-shore-53496.herokuapp.com/posts", { headers: { accessToken: localStorage.getItem("accessToken") } }).then((response) => {
+        axios.get("https://thawing-shore-53496.herokuapp.com/posts", { headers: { accessToken: localStorage.getItem("accessToken") } }).then((response) => {
             setListOfPosts(response.data.listOfPosts);
             setLikedPosts(
             response.data.likedPosts.map((like) => {
